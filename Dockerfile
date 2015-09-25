@@ -5,9 +5,9 @@ RUN apt-get update \
 
 RUN mkdir /opt \
   && cd /opt \
-  && git clone https://github.com/liubin/gitlab-jira-integration gj
+  && git clone https://github.com/liubin/gitlab-jira-integration.git gj
 
-WORK_DIR /opt/gj
+WORKDIR /opt/gj
 
 RUN curl -sS https://getcomposer.org/installer | php \
   && docker-php-ext-install zip mbstring \
