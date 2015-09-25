@@ -3,7 +3,7 @@ FROM php:5.6-cli
 RUN apt-get update \
   && apt-get install -y git-core libzip-dev
 
-RUN mkdir /opt \
+RUN mkdir -p /opt \
   && cd /opt \
   && git clone https://github.com/liubin/gitlab-jira-integration.git gj
 
