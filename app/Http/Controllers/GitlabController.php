@@ -101,7 +101,7 @@ class GitlabController extends BaseController
                 continue;
             }
 
-            Log::debug("Found found issue Key($issueKey) in commit message : " . $commit['message']);
+            Log::debug("Found issue Key($issueKey) in commit message : " . $commit['message']);
 
             $issueCount++;
 
